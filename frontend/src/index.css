@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body,
+  #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overscroll-behavior: none;
+  }
+
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  .animation-delay-150 {
+    animation-delay: -0.15s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: -0.3s;
+  }
+
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'liga';
+    user-select: none;
+  }
+}
+
+.prose-bauhaus p {
+  margin: 0.4rem 0;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.prose-bauhaus strong {
+  font-weight: 700;
+}
+
+.prose-bauhaus code {
+  background: #eee9e0;
+  padding: 0.1rem 0.3rem;
+  font-family: monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.prose-bauhaus pre {
+  background: #1a1a1a;
+  color: #f5f0e8;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+.prose-bauhaus ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+  margin: 0.4rem 0;
+  font-size: 0.875rem;
+}
+
+.prose-bauhaus h2,
+.prose-bauhaus h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0.6rem 0 0.3rem;
+}

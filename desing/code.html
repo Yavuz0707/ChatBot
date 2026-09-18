@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#1a1a1a","on-primary-fixed":"#1a1a1a","on-secondary-fixed-variant":"#1a1a1a","on-primary-container":"#1a1a1a","primary":"#1a1a1a","on-primary":"#ffffff","on-background":"#1a1a1a","surface-variant":"#e8e3da","on-primary-fixed-variant":"#1a1a1a","on-tertiary-fixed-variant":"#1a1a1a","on-tertiary":"#ffffff","primary-fixed-dim":"#e6b800","secondary-fixed":"#ffdad6","on-error":"#ffffff","on-secondary":"#1a1a1a","on-secondary-container":"#1a1a1a","surface-container-low":"#f2ede5","background":"#f5f0e8","inverse-primary":"#f5f0e8","inverse-on-surface":"#f5f0e8","surface-container-lowest":"#ffffff","surface-container-high":"#e8e3da","on-tertiary-fixed":"#1a1a1a","secondary":"#e63b2e","surface-container-highest":"#e2ddd4","surface":"#f5f0e8","on-surface":"#1a1a1a","primary-container":"#ffcc00","error":"#cc0000","tertiary-fixed-dim":"#a8c6ff","surface-container":"#eee9e0","secondary-fixed-dim":"#ffb3ab","inverse-surface":"#1a1a1a","on-tertiary-container":"#1a1a1a","outline":"#1a1a1a","surface-dim":"#d6d1c9","surface-bright":"#faf7f2","secondary-container":"#ffdad6","tertiary-fixed":"#d6e3ff","error-container":"#ffdad6","tertiary-container":"#d6e3ff","tertiary":"#0055ff","on-surface-variant":"#4a4a4a","surface-tint":"#1a1a1a","primary-fixed":"#ffcc00","outline-variant":"#d0cbc3","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{},"fontFamily":{"headline":["Space Grotesk"],"display":["Space Grotesk"],"body":["Inter"],"label":["Space Grotesk"]},"fontSize":{}}}}</script></head><body class="bg-surface font-body text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface text-inverse-on-surface z-50 flex flex-col justify-between border-r-2 border-primary shadow-[4px_0px_0px_0px_#1a1a1a]"><div class="flex flex-col flex-1 min-h-0"><div class="p-4 border-b-2 border-surface/20 flex items-center justify-between bg-primary"><div class="flex items-center gap-2"><span class="text-xs font-headline font-bold uppercase tracking-wider text-primary-container">Kullanıcı Paneli</span><span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-surface-container-lowest text-primary">PRO v2</span></div><button aria-label="Toggle sidebar" class="text-inverse-on-surface hover:text-primary-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span></button></div><div class="p-4 border-b-2 border-surface/20 bg-surface-variant/10"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-DEFAULT bg-primary-container text-on-primary-container flex items-center justify-center font-headline font-bold text-sm border border-primary shadow-[2px_2px_0px_0px_#1a1a1a]">AI</div><div class="min-w-0 flex-1"><p class="text-xs font-bold font-headline truncate uppercase text-surface-bright">Alex Demir</p><p class="text-[11px] text-surface-dim truncate">alex@mimari.ai</p></div><span class="material-symbols-outlined text-[18px] text-primary-container">verified_user</span></div></div><div class="p-4"><a class="w-full flex items-center justify-between px-3.5 py-2.5 bg-primary-container text-on-primary-container hover:bg-surface-bright hover:text-primary transition-all border-2 border-primary shadow-[3px_3px_0px_0px_#1a1a1a] font-headline font-bold text-xs uppercase tracking-wider" data-path="yeni-sohbet" href="#"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">add</span>Yeni Sohbet</span><span class="text-[10px] px-1.5 py-0.5 bg-primary text-on-primary rounded-DEFAULT font-mono font-bold">⌘K</span></a></div><div class="px-4 pb-2"><span class="text-[10px] font-headline font-bold uppercase tracking-wider text-surface-dim">Geçmiş Oturumlar</span></div><nav class="flex-1 overflow-y-auto px-3 space-y-1.5" data-active-classes="bg-surface-container-lowest text-primary font-bold shadow-[2px_2px_0px_0px_#ffcc00]"><a class="flex items-center justify-between px-3 py-2 text-xs text-surface-dim hover:text-surface-bright hover:bg-surface-variant/20 rounded-DEFAULT border border-transparent hover:border-surface/20 transition-all group" data-path="gorsel-kod-analizi" href="#"><span class="truncate">Görsel Kod Analizi</span><span class="material-symbols-outlined text-[14px] opacity-0 group-hover:opacity-100 text-primary-container">arrow_forward</span></a><a class="flex items-center justify-between px-3 py-2 text-xs text-surface-dim hover:text-surface-bright hover:bg-surface-variant/20 rounded-DEFAULT border border-transparent hover:border-surface/20 transition-all group" data-path="react-refactoring" href="#"><span class="truncate">React Refactoring</span><span class="material-symbols-outlined text-[14px] opacity-0 group-hover:opacity-100 text-primary-container">arrow_forward</span></a><a class="flex items-center justify-between px-3 py-2 text-xs text-surface-dim hover:text-surface-bright hover:bg-surface-variant/20 rounded-DEFAULT border border-transparent hover:border-surface/20 transition-all group" data-path="proje-dokumantasyonu" href="#"><span class="truncate">Proje Dokümantasyonu</span><span class="material-symbols-outlined text-[14px] opacity-0 group-hover:opacity-100 text-primary-container">arrow_forward</span></a><a class="flex items-center justify-between px-3 py-2 text-xs text-surface-dim hover:text-surface-bright hover:bg-surface-variant/20 rounded-DEFAULT border border-transparent hover:border-surface/20 transition-all group" data-path="api-mimarisi" href="#"><span class="truncate">API Mimarisi</span><span class="material-symbols-outlined text-[14px] opacity-0 group-hover:opacity-100 text-primary-container">arrow_forward</span></a></nav></div><div class="p-4 border-t-2 border-surface/20 bg-primary/40 space-y-3"><div class="p-2.5 bg-surface-variant/10 border border-surface/20 rounded-DEFAULT space-y-1.5"><div class="flex justify-between text-[10px] font-headline font-bold uppercase tracking-wider"><span class="text-surface-dim">Depolama Alanı</span><span class="text-primary-container">%78 Dolu</span></div><div class="w-full h-1.5 bg-surface-variant/30 rounded-DEFAULT overflow-hidden"><div class="h-full bg-primary-container w-[78%]"></div></div></div><div class="flex items-center justify-between pt-1"><a class="flex items-center gap-2 text-xs text-surface-dim hover:text-surface-bright transition-colors" data-path="ayarlar" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-headline uppercase text-[11px] font-bold">Ayarlar</span></a><button aria-label="Theme Switch" class="p-1.5 rounded-DEFAULT text-surface-dim hover:text-primary-container hover:bg-surface-variant/20 transition-all" type="button"><span class="material-symbols-outlined text-[18px]">dark_mode</span></button></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-md border-b-2 border-primary z-40 flex items-center justify-between px-6"><div class="flex items-center gap-3"><span class="inline-block w-2.5 h-2.5 bg-secondary rounded-full"></span><span class="font-headline font-bold text-xs uppercase tracking-widest text-on-surface">Oturum Modu: Claude-3.5-Sonnet</span></div><div class="flex items-center gap-4"><a class="text-xs font-headline font-bold uppercase tracking-wider text-on-surface-variant hover:text-on-surface" data-path="dokumanlar" href="#">Dokümantasyon</a><div class="w-px h-5 bg-outline-variant"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 flex-1 w-full bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Interior View Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 min-h-[calc(100vh-4rem)] bg-surface text-on-surface">
+<!-- Secondary Interactive Tooling Column / Sub-panel (Bauhaus Brutalist Modular Card) -->
+<aside class="xl:col-span-3 bg-surface-container-low p-5 flex flex-col justify-between gap-6">
+<div class="space-y-6">
+<!-- Live Connection & Session Status -->
+<div class="bg-surface-container-lowest p-4 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-headline font-bold uppercase tracking-wider text-on-surface-variant">Bağlantı Durumu</span>
+<div class="flex items-center gap-1.5 px-2 py-0.5 bg-surface-container text-on-surface text-[10px] font-headline font-bold uppercase">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Çevrimiçi</span>
+</div>
+</div>
+<div class="mt-2 flex items-baseline gap-2">
+<span class="text-xl font-headline font-bold tracking-tight">CANLI O-12</span>
+<span class="text-[11px] text-on-surface-variant font-mono">18ms latency</span>
+</div>
+</div>
+<!-- User Profile Quick Editor -->
+<div class="bg-surface-container-lowest p-4 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<label class="text-[11px] font-headline font-bold uppercase tracking-wider text-on-surface" for="usernameInput">Aktif Kimlik</label>
+<span class="text-[10px] font-headline font-bold px-2 py-0.5 bg-primary-container text-on-primary-container" id="userHandleBadge">@deniz</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container px-3 py-2 text-xs font-headline font-medium text-on-surface focus:outline-none focus:bg-surface-bright" id="usernameInput" placeholder="Adınızı Girin..." type="text" value="Deniz Yılmaz"/>
+<button class="absolute right-1 px-2 py-1 bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-colors text-[10px] font-headline font-bold uppercase flex items-center gap-1" id="saveUsernameBtn" type="button">
+<span class="material-symbols-outlined text-[13px]">check</span>
+              Kaydet
+            </button>
+</div>
+<p class="text-[10px] text-on-surface-variant leading-tight">Bu isim model bağlam penceresinde ve ekip oturumlarında yayınlanır.</p>
+</div>
+<!-- Görsel Analiz (Multimodal Vision Dropzone) -->
+<div class="bg-surface-container-lowest p-4 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">visibility</span>
+<span class="text-[11px] font-headline font-bold uppercase tracking-wider">Görsel Analiz Motoru</span>
+</div>
+<span class="text-[9px] font-headline font-bold px-1.5 py-0.5 bg-secondary text-on-error uppercase">V-2.4</span>
+</div>
+<!-- Active Attached Preview Tile -->
+<div class="relative bg-surface-container p-2.5 flex items-center gap-3" id="attachedPreviewTile">
+<div class="w-12 h-12 bg-surface-dim overflow-hidden flex-shrink-0 flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High contrast architectural wireframe blueprint mockup for a responsive web application layout featuring black ink outlines on off-white textured paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXD6qEqwt9OSav1lu4uaXqovQmD6s4dcJH77ljNJWoTqk8pQCLnSHheyLqoFkKV6FZ45Cly_Cuv6xjv_3YEBi3HlravwKNwyfmSp3voceKtuRB4k8Eqqwka6jK5uA_kO5PaqrYXJ21LI31U3CbdlgrNjpco_m14B9-wNNCQV_xn6Nd8PtrdV121BnmnqRGK_Ko93yTPngCOPnNnAWRT3saShVEeWkMJBiJYzJ1jidHUd_xMkIT6kOLeA"/>
+</div>
+<div class="min-w-0 flex-1">
+<p class="text-xs font-headline font-bold text-on-surface truncate">mockup_v2.png</p>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="text-[10px] font-mono text-on-surface-variant">1.2 MB</span>
+<span class="text-[9px] font-headline font-bold px-1 py-0.2 bg-primary-container text-on-primary-container uppercase">Analize Hazır</span>
+</div>
+</div>
+<button class="w-6 h-6 bg-surface-container-high hover:bg-secondary hover:text-on-error text-on-surface flex items-center justify-center transition-colors" id="removeAttachmentBtn" title="Kaldır" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Drop Area -->
+<div class="border-2 border-dashed border-outline/30 hover:border-primary p-4 bg-surface-container-low transition-colors text-center cursor-pointer group" id="dropZoneArea">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary text-[28px]">cloud_upload</span>
+<p class="mt-1 text-xs font-headline font-bold uppercase text-on-surface">PNG, JPG veya SVG Sürükleyin</p>
+<p class="text-[10px] text-on-surface-variant mt-0.5">Maksimum 25MB • Çoklu Görsel Destekli</p>
+</div>
+</div>
+<!-- Session Overview & Context Metrics -->
+<div class="bg-surface-container-lowest p-4 shadow-sm space-y-2.5">
+<div class="flex justify-between items-center text-[10px] font-headline font-bold uppercase">
+<span class="text-on-surface-variant">Bağlam Belleği (Token)</span>
+<span class="font-mono text-primary">12.4k / 128k</span>
+</div>
+<div class="w-full h-2 bg-surface-container overflow-hidden">
+<div class="h-full bg-primary w-[16%]"></div>
+</div>
+<div class="flex items-center justify-between text-[10px] font-mono text-on-surface-variant pt-1">
+<span>Model: Claude 3.5 Sonnet</span>
+<span>Sıcaklık: 0.2</span>
+</div>
+</div>
+</div>
+<!-- Quick Session Clean & Terminal Trigger -->
+<div class="space-y-2 pt-4">
+<button class="w-full py-2.5 px-3 bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-on-surface text-xs font-headline font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors" id="clearChatBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">delete_sweep</span>
+          Sohbeti Temizle
+        </button>
+</div>
+</aside>
+<!-- Center Interactive Conversation Deck -->
+<section class="xl:col-span-9 flex flex-col justify-between relative bg-surface">
+<!-- Top Conversation Sub-Header (Integrated contextual actions) -->
+<div class="px-6 py-3.5 bg-surface-container-lowest shadow-sm flex flex-wrap items-center justify-between gap-3 sticky top-16 z-30">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary-container text-on-primary-container flex items-center justify-center font-headline font-bold text-sm">
+            AI
+          </div>
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline font-bold text-sm uppercase tracking-wide text-on-surface">Çok Kullanıcılı Yapay Zeka Asistanı</h1>
+<span class="px-2 py-0.5 text-[9px] font-headline font-bold uppercase bg-tertiary-container text-on-tertiary-container">Multimodal Pro</span>
+</div>
+<p class="text-[10px] text-on-surface-variant font-mono">React v18 &amp; Tailwind Component Engine</p>
+</div>
+</div>
+<!-- Real-time Collaboration Pill & Actions -->
+<div class="flex items-center gap-3">
+<div class="flex items-center -space-x-1.5 overflow-hidden">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[9px] font-bold ring-2 ring-surface-container-lowest">DY</div>
+<div class="w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center text-[9px] font-bold ring-2 ring-surface-container-lowest">SK</div>
+<div class="w-6 h-6 rounded-full bg-secondary text-on-error flex items-center justify-center text-[9px] font-bold ring-2 ring-surface-container-lowest">EK</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center text-[8px] font-headline font-bold ring-2 ring-surface-container-lowest">+2</div>
+</div>
+<span class="text-[11px] font-headline font-medium text-on-surface-variant hidden sm:inline">5 Kişi Oturumda</span>
+<div class="h-4 w-px bg-surface-container-high"></div>
+<button class="px-3 py-1.5 bg-surface-container hover:bg-primary hover:text-on-primary text-[11px] font-headline font-bold uppercase tracking-wider flex items-center gap-1 transition-colors" id="exportSessionBtn" type="button">
+<span class="material-symbols-outlined text-[15px]">share</span>
+<span>Paylaş</span>
+</button>
+</div>
+</div>
+<!-- Message Feed Stream -->
+<div class="flex-1 overflow-y-auto px-6 py-8 space-y-8 max-w-5xl mx-auto w-full" id="messageFeed">
+<!-- User Turn 1 -->
+<div class="flex gap-4 items-start group">
+<div class="w-9 h-9 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-xs flex-shrink-0 shadow-sm">
+            DY
+          </div>
+<div class="flex-1 space-y-3">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-xs uppercase tracking-wide text-on-surface">Deniz Yılmaz</span>
+<span class="text-[10px] font-mono text-on-surface-variant">14:28:10</span>
+<span class="text-[9px] font-headline font-bold px-1.5 py-0.2 bg-surface-container text-on-surface-variant uppercase">Yazar</span>
+</div>
+<div class="bg-surface-container-lowest p-4 shadow-sm space-y-3 max-w-3xl">
+<p class="text-sm font-body text-on-surface leading-relaxed">
+                Merhaba! Yüklediğim arayüz görselini inceleyip Tailwind CSS ve React için temiz, ölçeklenebilir bir bileşen mimarisi önerebilir misin? Özellikle durum yönetimi ve görsel analiz önizlemesini gerçekçi ele alalım.
+              </p>
+<!-- Uploaded thumbnail attached in user bubble -->
+<div class="p-2.5 bg-surface-container flex items-center gap-3 w-fit">
+<div class="w-10 h-10 bg-surface-dim overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Screenshot of an application wireframe dashboard with user panel, live metrics charts, and input fields" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHyPlrMONYgdl4iVW6fHfobCJWvMruuaM-t-zdz__HlN06tvk9D2IXItZrYwsY9r5hH5zc460U8_tt4AUDpHPWLeD9cN164kryvN6Cp6I7BGeAg13NyM4RDi00mJThhf4PFkDVsXxHY1PQAN5v-I3LdQHNlq-Y1T0kOE_joJNr5SNItFSpJGxi7Hb6IAIhdeE95jCdZj4h7wUqzFTVEUgCX6aCsM27WrMIcoUwX2rsK0PeLfm2t8kuYw"/>
+</div>
+<div>
+<p class="text-xs font-headline font-bold text-on-surface">mockup_v2.png</p>
+<p class="text-[10px] font-mono text-on-surface-variant">Görsel Ek • 1.2 MB • Çözümlendi</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Assistant Turn 1 -->
+<div class="flex gap-4 items-start group">
+<div class="w-9 h-9 bg-primary-container text-on-primary-container flex items-center justify-center font-headline font-black text-xs flex-shrink-0 shadow-sm">
+            AI
+          </div>
+<div class="flex-1 space-y-3">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-xs uppercase tracking-wide text-on-surface">Claude 3.5 Sonnet</span>
+<span class="text-[10px] font-mono text-on-surface-variant">14:28:12</span>
+<span class="text-[9px] font-headline font-bold px-1.5 py-0.2 bg-primary-container text-on-primary-container uppercase">Vision 200k</span>
+</div>
+<div class="bg-surface-container-lowest p-6 shadow-sm space-y-5 max-w-4xl">
+<p class="text-sm font-body text-on-surface leading-relaxed">
+                Harika bir arayüz şeması! Yüklediğin <strong>mockup_v2.png</strong> dosyasını inceledim. Brutalist ve yüksek kontrastlı Bauhaus ilkelerini koruyarak modüler bir React mimarisi oluşturdum:
+              </p>
+<!-- Architectural Breakdown Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 py-1">
+<div class="p-3 bg-surface-container">
+<span class="text-[10px] font-headline font-bold uppercase text-tertiary">01 / Modüler Panel</span>
+<h2 class="font-headline font-bold text-xs uppercase text-on-surface mt-0.5">UserSidebar.tsx</h2>
+<p class="text-xs text-on-surface-variant mt-1 leading-normal">Kullanıcı adı senkronizasyonu, dropzone yükleme alanı ve dosya önbelleğini yönetir.</p>
+</div>
+<div class="p-3 bg-surface-container">
+<span class="text-[10px] font-headline font-bold uppercase text-secondary">02 / Mesaj Motoru</span>
+<h2 class="font-headline font-bold text-xs uppercase text-on-surface mt-0.5">ConversationFeed.tsx</h2>
+<p class="text-xs text-on-surface-variant mt-1 leading-normal">Kullanıcı girdilerini ve streaming yapay zeka tokenlarını çift tamponlu biçimde çizer.</p>
+</div>
+</div>
+<!-- High Contrast Code Preview Block -->
+<div class="bg-inverse-surface text-inverse-on-surface p-4 space-y-2 shadow-sm">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-secondary inline-block"></span>
+<span class="w-2.5 h-2.5 bg-primary-container inline-block"></span>
+<span class="w-2.5 h-2.5 bg-tertiary inline-block"></span>
+<span class="text-[11px] font-mono text-surface-dim ml-2">ChatContainer.tsx</span>
+</div>
+<button class="px-2.5 py-1 bg-surface-variant/20 hover:bg-primary-container hover:text-on-primary-container text-surface-bright text-[10px] font-headline font-bold uppercase tracking-wider flex items-center gap-1 transition-colors" id="copyCodeBtn" type="button">
+<span class="material-symbols-outlined text-[13px]">content_copy</span>
+<span>Kodu Kopyala</span>
+</button>
+</div>
+<pre class="font-mono text-xs overflow-x-auto text-surface-bright leading-relaxed p-2"><code><span class="text-tertiary-fixed-dim">import</span> React, { useState } <span class="text-tertiary-fixed-dim">from</span> <span class="text-primary-fixed">'react'</span>;
+
+<span class="text-surface-dim">// Responsive Brutalist Full-Stack Shell Component</span>
+<span class="text-tertiary-fixed-dim">export const</span> <span class="text-primary-container">ChatContainer</span>: React.FC&lt;ChatProps&gt; = ({ session, messages }) =&gt; {
+  <span class="text-tertiary-fixed-dim">const</span> [activeFile, setActiveFile] = useState&lt;File | <span class="text-tertiary-fixed-dim">null</span>&gt;(<span class="text-tertiary-fixed-dim">null</span>);
+
+  <span class="text-tertiary-fixed-dim">return</span> (
+    &lt;<span class="text-primary-container">div</span> className=<span class="text-primary-fixed">"flex h-screen bg-surface text-on-surface overflow-hidden"</span>&gt;
+      &lt;<span class="text-primary-container">UserSidebar</span> 
+        activeUser={session.user} 
+        onUpload={(file) =&gt; setActiveFile(file)} 
+      /&gt;
+      &lt;<span class="text-primary-container">main</span> className=<span class="text-primary-fixed">"flex-1 flex flex-col relative"</span>&gt;
+        &lt;<span class="text-primary-container">ConversationFeed</span> items={messages} activeFile={activeFile} /&gt;
+        &lt;<span class="text-primary-container">PromptBar</span> onSubmit={handleStreamDispatch} /&gt;
+      &lt;/<span class="text-primary-container">main</span>&gt;
+    &lt;/<span class="text-primary-container">div</span>&gt;
+  );
+};</code></pre>
+</div>
+<p class="text-xs font-body text-on-surface leading-relaxed">
+                Bu şablon sayesinde dosya sürükleme olayları doğrudan <code class="font-mono px-1 py-0.5 bg-surface-container font-bold">activeFile</code> bağlamına iletilir ve mesaj akışı aksamadan gerçek zamanlı analiz başlatılır.
+              </p>
+</div>
+</div>
+</div>
+<!-- User Turn 2 -->
+<div class="flex gap-4 items-start group">
+<div class="w-9 h-9 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-xs flex-shrink-0 shadow-sm">
+            DY
+          </div>
+<div class="flex-1 space-y-2">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-xs uppercase tracking-wide text-on-surface">Deniz Yılmaz</span>
+<span class="text-[10px] font-mono text-on-surface-variant">14:29:45</span>
+</div>
+<div class="bg-surface-container-lowest p-4 shadow-sm max-w-2xl">
+<p class="text-sm font-body text-on-surface leading-relaxed">
+                Harika! Kullanıcı adı güncellemesi ve görsel analiz önizlemesini gerçek zamanlı yapabilir miyiz?
+              </p>
+</div>
+</div>
+</div>
+<!-- Assistant Turn 2: Thinking & Stream State -->
+<div class="flex gap-4 items-start">
+<div class="w-9 h-9 bg-primary-container text-on-primary-container flex items-center justify-center font-headline font-black text-xs flex-shrink-0 shadow-sm relative">
+            AI
+            <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-primary-fixed-dim rounded-full animate-ping"></span>
+</div>
+<div class="flex-1 space-y-2">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-xs uppercase tracking-wide text-on-surface">Claude 3.5 Sonnet</span>
+<span class="text-[10px] font-mono text-on-surface-variant">Akış Hazırlanıyor...</span>
+</div>
+<div class="bg-surface-container-lowest p-4 shadow-sm inline-flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 bg-primary rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+<span class="w-2 h-2 bg-primary rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+<span class="w-2 h-2 bg-primary rounded-full animate-bounce"></span>
+</div>
+<span class="text-xs font-headline font-bold uppercase tracking-wider text-on-surface-variant">Yapay zeka yanıt üretiyor &amp; WebSocket bağlantısı senkronize ediliyor...</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pinned Bauhaus Dock Prompt Bar -->
+<div class="p-6 bg-surface-container-low/95 backdrop-blur-md sticky bottom-0 z-30 shadow-md">
+<div class="max-w-4xl mx-auto space-y-2">
+<!-- Selected Attachment Pill bar -->
+<div class="flex items-center gap-2" id="promptAttachmentBar">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 bg-surface-container-lowest shadow-sm text-xs font-headline font-bold text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-tertiary">attach_file</span>
+<span class="truncate max-w-[180px]">mockup_v2.png</span>
+<button class="hover:text-secondary flex items-center" id="discardDraftAttachment" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<button class="text-[10px] font-headline font-bold uppercase px-2 py-1 bg-surface-container hover:bg-surface-container-high transition-colors" id="addMoreMediaBtn" type="button">
+              + Başka Görsel
+            </button>
+</div>
+<!-- The Core Input Console -->
+<div class="bg-surface-container-lowest p-2 shadow-sm flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+<div class="flex items-center gap-1 pl-2">
+<button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="cameraUploadBtn" title="Ekran Resmi Al" type="button">
+<span class="material-symbols-outlined text-[20px]">add_a_photo</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="audioInputBtn" title="Sesli Komut" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<div class="flex-1 min-w-0">
+<input class="w-full bg-transparent px-3 py-2 text-xs sm:text-sm font-body text-on-surface focus:outline-none placeholder:text-on-surface-variant/60" id="mainChatInput" placeholder="Bir şeyler yazın... (Görselleri buraya da sürükleyip bırakabilirsiniz)" type="text"/>
+</div>
+<div class="flex items-center justify-end gap-2 pr-1">
+<div class="hidden md:flex items-center gap-1 text-[10px] font-mono text-on-surface-variant px-2">
+<span>Enter ↵</span>
+</div>
+<button class="px-4 py-2.5 bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-all font-headline font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-sm" id="sendMessageBtn" type="button">
+<span>Gönder</span>
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+</button>
+</div>
+</div>
+<!-- Bottom Micro Disclaimer -->
+<div class="flex items-center justify-between text-[10px] font-headline text-on-surface-variant px-1 pt-1">
+<span>Yapay zeka asistanı hata yapabilir. Mimari kararları kontrol ediniz.</span>
+<span class="font-mono">v2.4.0 • UTF-8</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+    (function () {
+      // Username quick update
+      const usernameInput = document.getElementById('usernameInput');
+      const saveUsernameBtn = document.getElementById('saveUsernameBtn');
+      const userHandleBadge = document.getElementById('userHandleBadge');
+
+      if (saveUsernameBtn && usernameInput && userHandleBadge) {
+        saveUsernameBtn.addEventListener('click', () => {
+          const val = usernameInput.value.trim();
+          if (val.length > 0) {
+            const handle = '@' + val.toLowerCase().replace(/\s+/g, '_');
+            userHandleBadge.textContent = handle;
+            saveUsernameBtn.classList.remove('bg-primary', 'text-on-primary');
+            saveUsernameBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+            setTimeout(() => {
+              saveUsernameBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+              saveUsernameBtn.classList.add('bg-primary', 'text-on-primary');
+            }, 1200);
+          }
+        });
+      }
+
+      // Attachment remover
+      const removeAttachmentBtn = document.getElementById('removeAttachmentBtn');
+      const attachedPreviewTile = document.getElementById('attachedPreviewTile');
+      const promptAttachmentBar = document.getElementById('promptAttachmentBar');
+      const discardDraftAttachment = document.getElementById('discardDraftAttachment');
+
+      function hideAttachment() {
+        if (attachedPreviewTile) attachedPreviewTile.style.display = 'none';
+        if (promptAttachmentBar) promptAttachmentBar.style.display = 'none';
+      }
+
+      if (removeAttachmentBtn) removeAttachmentBtn.addEventListener('click', hideAttachment);
+      if (discardDraftAttachment) discardDraftAttachment.addEventListener('click', hideAttachment);
+
+      // Copy Code Trigger
+      const copyCodeBtn = document.getElementById('copyCodeBtn');
+      if (copyCodeBtn) {
+        copyCodeBtn.addEventListener('click', () => {
+          const textToCopy = `export const ChatContainer: React.FC<ChatProps> = ({ session, messages }) => {...}`;
+          navigator.clipboard?.writeText(textToCopy).then(() => {
+            const original = copyCodeBtn.innerHTML;
+            copyCodeBtn.innerHTML = '<span class="material-symbols-outlined text-[13px]">done</span><span>Kopyalandı!</span>';
+            setTimeout(() => {
+              copyCodeBtn.innerHTML = original;
+            }, 1600);
+          });
+        });
+      }
+
+      // Clear Chat action
+      const clearChatBtn = document.getElementById('clearChatBtn');
+      const messageFeed = document.getElementById('messageFeed');
+      if (clearChatBtn && messageFeed) {
+        clearChatBtn.addEventListener('click', () => {
+          if (confirm('Mevcut oturum geçmişi temizlensin mi?')) {
+            messageFeed.innerHTML = `
+              <div class="p-8 text-center bg-surface-container-lowest max-w-md mx-auto shadow-sm space-y-3 mt-12">
+                <span class="material-symbols-outlined text-4xl text-primary-container">chat_bubble</span>
+                <h3 class="font-headline font-bold text-sm uppercase">Oturum Sıfırlandı</h3>
+                <p class="text-xs text-on-surface-variant">Yeni bir soru sorarak veya arayüz görseli yükleyerek analizi başlatabilirsiniz.</p>
+              </div>
+            `;
+          }
+        });
+      }
+
+      // Input Dispatch Micro Interaction
+      const mainChatInput = document.getElementById('mainChatInput');
+      const sendMessageBtn = document.getElementById('sendMessageBtn');
+
+      function submitMessage() {
+        if (!mainChatInput) return;
+        const msg = mainChatInput.value.trim();
+        if (!msg) return;
+
+        const turnWrapper = document.createElement('div');
+        turnWrapper.className = 'flex gap-4 items-start';
+        turnWrapper.innerHTML = `
+          <div class="w-9 h-9 bg-primary text-on-primary flex items-center justify-center font-headline font-bold text-xs flex-shrink-0 shadow-sm">
+            DY
+          </div>
+          <div class="flex-1 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="font-headline font-bold text-xs uppercase tracking-wide text-on-surface">Deniz Yılmaz</span>
+              <span class="text-[10px] font-mono text-on-surface-variant">Şimdi</span>
+            </div>
+            <div class="bg-surface-container-lowest p-4 shadow-sm max-w-2xl">
+              <p class="text-sm font-body text-on-surface leading-relaxed">\${msg}</p>
+            </div>
+          </div>
+        `;
+        messageFeed.appendChild(turnWrapper);
+        mainChatInput.value = '';
+        messageFeed.scrollTop = messageFeed.scrollHeight;
+      }
+
+      if (sendMessageBtn) sendMessageBtn.addEventListener('click', submitMessage);
+      if (mainChatInput) {
+        mainChatInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            submitMessage();
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>
