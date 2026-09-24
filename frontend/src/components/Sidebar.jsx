@@ -1,5 +1,5 @@
 // Sol navigasyon sidebar — kullanıcı profili, oturum geçmişi, ayarlar
-export default function Sidebar({ isOpen, onToggle, savedUsername, onClearChat }) {
+export default function Sidebar({ isOpen, onToggle, username, onUsernameChange, onSaveUsername, savedUsername, onClearChat }) {
   const initials = savedUsername
     ? savedUsername.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2)
     : 'AI'
@@ -70,6 +70,31 @@ export default function Sidebar({ isOpen, onToggle, savedUsername, onClearChat }
             </div>
             <span className="material-symbols-outlined text-[18px] text-primary-container">verified_user</span>
           </div>
+          {!savedUsername && (
+            <form
+              className="mt-3 space-y-2"
+              onSubmit={(event) => {
+                event.preventDefault()
+                onSaveUsername(username)
+              }}
+            >
+              <label htmlFor="username" className="sr-only">Kullanıcı adınız</label>
+              <input
+                id="username"
+                value={username}
+                onChange={(event) => onUsernameChange(event.target.value)}
+                placeholder="Kullanıcı adınız"
+                autoComplete="name"
+                className="w-full px-2.5 py-2 bg-white/10 border border-white/20 text-xs text-surface-bright placeholder:text-surface-dim outline-none focus:border-primary-container"
+              />
+              <button
+                type="submit"
+                className="w-full px-3 py-2 bg-primary-container text-on-primary-container border-2 border-primary font-headline font-bold text-[10px] uppercase tracking-wider hover:bg-surface-bright hover:text-primary transition-colors"
+              >
+                Adımı Kaydet
+              </button>
+            </form>
+          )}
         </div>
 
         {/* Yeni Sohbet */}

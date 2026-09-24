@@ -111,6 +111,9 @@ export default function App() {
       <Sidebar
         isOpen={sidebarOpen}
         onToggle={() => setSidebarOpen(o => !o)}
+        username={username}
+        onUsernameChange={setUsername}
+        onSaveUsername={handleSaveUsername}
         savedUsername={savedUsername}
         onClearChat={handleClearChat}
       />
@@ -134,7 +137,7 @@ export default function App() {
             )}
             <span className="inline-block w-2.5 h-2.5 bg-secondary rounded-full animate-pulse" />
             <span className="font-headline font-bold text-xs uppercase tracking-widest text-on-surface">
-              Gemini 2.0 Flash — Çok Kullanıcılı AI Asistanı
+              AI Asistanı
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -178,7 +181,7 @@ export default function App() {
                     </span>
                   </div>
                   <p className="text-[10px] text-on-surface-variant font-mono">
-                    Gemini 2.0 Flash • Web Arama • Finans • Hava Durumu
+                    Aktif Model: Gemini 2.0 Flash
                   </p>
                 </div>
               </div>
