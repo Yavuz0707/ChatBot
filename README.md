@@ -2,7 +2,7 @@
 
 ![Proje Ekran Görüntüsü](images/Screenshot%202026-09-24%20110850.png)
 
-Modern, hızlı ve çok yetenekli bir Yapay Zeka Asistanı. Bu proje, kullanıcıların metin ve görsel tabanlı sorgularına gelişmiş yapay zeka modelleri ile cevap veren bir platform sunar. İçerisinde hem FastAPI destekli güçlü bir **Backend**, hem React (Vite) ile geliştirilmiş modern bir **Frontend**, hem de alternatif kullanım için Streamlit tabanlı bir arayüz barındırır.
+Modern, hızlı ve çok yetenekli bir Yapay Zeka Asistanı. Bu proje, kullanıcıların metin ve görsel tabanlı sorgularına gelişmiş yapay zeka modelleri ile cevap veren bir platform sunar. İçerisinde hem FastAPI destekli güçlü bir **Backend**, hem React (Vite) ile geliştirilmiş modern bir **Frontend**, hem de alternatif kullanım için Streamlit tabanlı bir arayüz barındırır..
 
 ## 🌟 Öne Çıkan Özellikler
 
